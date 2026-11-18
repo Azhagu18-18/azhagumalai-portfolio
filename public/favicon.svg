@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF" />
+      <stop offset="50%" stop-color="#756BFF" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="#0D1220" stroke="url(#cyberGrad)" stroke-width="3" />
+  <path d="M 28 72 L 42 28 L 56 72 M 34 56 L 50 56" fill="none" stroke="url(#cyberGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)"/>
+  <path d="M 58 28 L 58 72 M 58 50 L 76 28 M 58 50 L 76 72" fill="none" stroke="#00D4FF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)"/>
+  <circle cx="50" cy="50" r="44" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4 4" />
+</svg>
