@@ -15,11 +15,11 @@ export default function Hero() {
     }
   };
 
-  const floatingBadges = [
-    { label: 'React.js', icon: Code2, color: '#00D4FF', position: 'top-12 -left-6 sm:top-16 sm:left-4' },
-    { label: 'Node.js', icon: Cpu, color: '#10B981', position: 'bottom-20 -left-4 sm:bottom-24 sm:left-2' },
-    { label: 'MongoDB', icon: Database, color: '#8B5CF6', position: 'top-20 -right-4 sm:top-24 sm:right-6' },
-    { label: 'TypeScript', icon: Layers, color: '#38BDF8', position: 'bottom-24 -right-6 sm:bottom-28 sm:right-4' },
+  const techBadges = [
+    { label: 'React.js', icon: Code2, color: '#00D4FF', position: 'top-8 -left-4 sm:top-12 sm:left-2' },
+    { label: 'Node.js', icon: Cpu, color: '#10B981', position: 'bottom-16 -left-2 sm:bottom-20 sm:left-2' },
+    { label: 'MongoDB', icon: Database, color: '#8B5CF6', position: 'top-12 -right-2 sm:top-16 sm:right-4' },
+    { label: 'TypeScript', icon: Layers, color: '#38BDF8', position: 'bottom-20 -right-4 sm:bottom-24 sm:right-2' },
   ];
 
   return (
@@ -32,13 +32,12 @@ export default function Hero() {
             
             {/* Status Indicator Pill */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#111827]/80 border border-[#756BFF]/30 text-xs font-semibold tracking-wider text-[#A1A1AA] backdrop-blur-md shadow-[0_0_20px_-5px_rgba(117,107,255,0.3)]"
+              transition={{ duration: 0.5 }}
+              className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#111827]/85 border border-[#756BFF]/30 text-xs font-semibold tracking-wider text-[#A1A1AA] backdrop-blur-md shadow-[0_0_15px_-3px_rgba(117,107,255,0.25)]"
             >
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
               </span>
               <span className="text-[#00D4FF] font-mono">//</span>
@@ -50,9 +49,9 @@ export default function Hero() {
             {/* Main Name Typography */}
             <div className="space-y-1 sm:space-y-2">
               <motion.h1
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 25 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.1 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
                 className="text-4xl sm:text-6xl md:text-7xl xl:text-8xl font-black tracking-tight leading-[0.95] uppercase"
               >
                 <span className="block text-[#F8FAFC]">
@@ -65,9 +64,9 @@ export default function Hero() {
 
               {/* Title Badge */}
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: -15 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.7, delay: 0.25 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
                 className="pt-2 flex items-center gap-3"
               >
                 <div className="h-[2px] w-12 bg-gradient-to-r from-[#00D4FF] to-[#756BFF]" />
@@ -79,9 +78,9 @@ export default function Hero() {
 
             {/* Professional Introduction */}
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.35 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               className="text-base sm:text-lg md:text-xl text-[#A1A1AA] max-w-2xl leading-relaxed font-normal"
             >
               "Building modern, scalable and interactive digital experiences through creative frontend engineering and powerful backend solutions."
@@ -89,30 +88,30 @@ export default function Hero() {
 
             {/* Quick Metrics Bar */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.45 }}
+              transition={{ duration: 0.5, delay: 0.35 }}
               className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1 max-w-lg"
             >
-              <div className="p-3 rounded-xl bg-[#111827]/60 border border-white/5 backdrop-blur-sm">
+              <div className="p-3.5 rounded-xl bg-[#111827]/70 border border-white/5 backdrop-blur-sm">
                 <div className="text-xl sm:text-2xl font-extrabold text-[#00D4FF]">1.5+</div>
                 <div className="text-xs text-[#A1A1AA] font-medium">Years Experience</div>
               </div>
-              <div className="p-3 rounded-xl bg-[#111827]/60 border border-white/5 backdrop-blur-sm">
-                <div className="text-xl sm:text-2xl font-extrabold text-[#756BFF]">MERN</div>
-                <div className="text-xs text-[#A1A1AA] font-medium">Full Stack Core</div>
+              <div className="p-3.5 rounded-xl bg-[#111827]/70 border border-white/5 backdrop-blur-sm">
+                <div className="text-xl sm:text-2xl font-extrabold text-[#756BFF]">30+</div>
+                <div className="text-xs text-[#A1A1AA] font-medium">Websites Built</div>
               </div>
-              <div className="p-3 rounded-xl bg-[#111827]/60 border border-white/5 backdrop-blur-sm col-span-2 sm:col-span-1">
-                <div className="text-xl sm:text-2xl font-extrabold text-emerald-400">100%</div>
-                <div className="text-xs text-[#A1A1AA] font-medium">Responsive UI</div>
+              <div className="p-3.5 rounded-xl bg-[#111827]/70 border border-white/5 backdrop-blur-sm col-span-2 sm:col-span-1">
+                <div className="text-xl sm:text-2xl font-extrabold text-emerald-400">7+</div>
+                <div className="text-xs text-[#A1A1AA] font-medium">Enterprise Apps</div>
               </div>
             </motion.div>
 
             {/* Action CTAs */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.55 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
               className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2"
             >
               {/* Primary CTA */}
@@ -122,7 +121,7 @@ export default function Hero() {
                 className="w-full sm:w-auto"
               >
                 <span>EXPLORE MY WORK</span>
-                <ArrowDown className="w-4 h-4 -rotate-90 group-hover:rotate-0 transition-transform" />
+                <ArrowDown className="w-4 h-4 -rotate-90" />
               </MagneticButton>
 
               {/* Secondary CTA */}
@@ -152,31 +151,27 @@ export default function Hero() {
           {/* Right Column: 3D Interactive Cyber Core */}
           <div className="lg:col-span-5 relative flex items-center justify-center">
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.9, delay: 0.2 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="w-full h-full relative"
             >
               {/* 3D Scene */}
               <CyberHeroScene />
 
-              {/* Floating Technology Pills */}
-              {floatingBadges.map((badge, idx) => {
+              {/* Static Elegant Technology Badges */}
+              {techBadges.map((badge, idx) => {
                 const Icon = badge.icon;
                 return (
-                  <motion.div
+                  <div
                     key={badge.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.4 + idx * 0.15 }}
-                    className={`absolute ${badge.position} z-20 hidden md:flex items-center gap-2 px-3 py-2 rounded-xl bg-[#111827]/90 border border-white/10 backdrop-blur-md shadow-[0_10px_25px_-5px_rgba(0,0,0,0.7)] animate-float`}
-                    style={{ animationDelay: `${idx * 1.5}s` }}
+                    className={`absolute ${badge.position} z-20 hidden md:flex items-center gap-2 px-3 py-2 rounded-xl bg-[#111827]/90 border border-white/10 backdrop-blur-md shadow-[0_10px_20px_-5px_rgba(0,0,0,0.7)]`}
                   >
                     <Icon className="w-4 h-4" style={{ color: badge.color }} />
                     <span className="text-xs font-semibold text-[#F8FAFC] tracking-wide">
                       {badge.label}
                     </span>
-                  </motion.div>
+                  </div>
                 );
               })}
             </motion.div>
@@ -184,24 +179,17 @@ export default function Hero() {
         </div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+        <div
           className="mt-12 sm:mt-16 flex flex-col items-center justify-center gap-2 cursor-pointer"
           onClick={() => scrollTo('about')}
         >
           <span className="text-[11px] font-medium tracking-[0.25em] text-[#A1A1AA] uppercase flex items-center gap-2">
             SCROLL TO EXPLORE
           </span>
-          <div className="w-5 h-9 rounded-full border-2 border-[#756BFF]/40 flex items-start justify-center p-1 shadow-[0_0_15px_-3px_rgba(117,107,255,0.4)]">
-            <motion.div
-              animate={{ y: [0, 14, 0] }}
-              transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-              className="w-1.5 h-1.5 rounded-full bg-[#00D4FF]"
-            />
+          <div className="w-5 h-9 rounded-full border-2 border-[#756BFF]/40 flex items-start justify-center p-1">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#00D4FF] animate-pulse" />
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

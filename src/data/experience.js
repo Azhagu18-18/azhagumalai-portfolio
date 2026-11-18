@@ -1,46 +1,48 @@
 export const experiences = [
   {
+    company: "Nplus Technologies",
+    role: "Full Stack Developer",
+    duration: "June 2025 – Present (1 Year 2 Months)",
+    period: "Full-Time",
+    badge: "7 Production Projects",
+    type: "Professional",
+    description: "Spearheading full-stack engineering across 7 enterprise and mobility web applications (Food App, TAXI Appz, 23 Cabs, CKC, Navn & Go, VYD, Xmoveon) utilizing React.js, Node.js, Express.js, MongoDB, and TypeScript.",
+    points: [
+      "Architected and deployed responsive React interfaces and resilient REST APIs across 7 major client applications.",
+      "Engineered driver dispatch, booking management, and trip tracking workflows with real-time state synchronization.",
+      "Implemented JWT authentication, role-based access control, wallet features, and secure database operations.",
+      "Optimized MongoDB aggregation pipelines, query response times, and cross-browser frontend performance."
+    ],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "TypeScript", "REST APIs", "JWT Auth", "Git"]
+  },
+  {
     company: "Creative Point",
     role: "Web Developer",
     duration: "4 Months | Present",
     period: "Recent / Present",
-    badge: "Current Position",
+    badge: "30+ Websites Developed",
     type: "Professional",
-    description: "Spearheading web page development and maintenance with a focus on high-fidelity responsive layouts and reusable interface components.",
+    description: "Engineered, deployed, and enhanced over 30 commercial websites with an uncompromising focus on responsive layouts, reusable component architectures, and cross-browser consistency.",
     points: [
-      "Develop and maintain responsive website pages and reusable UI components.",
-      "Implement website updates, troubleshoot layout issues, and improve cross-device usability."
+      "Developed and maintained responsive website pages and modular UI component libraries across 30+ client projects.",
+      "Resolved complex CSS layout anomalies, flexbox/grid edge-cases, and improved cross-device rendering.",
+      "Implemented website feature enhancements, speed optimizations, and dynamic content updates."
     ],
-    tech: ["Responsive Design", "UI Components", "HTML5/CSS3", "JavaScript", "Layout Debugging"]
-  },
-  {
-    company: "Nplus Technologies",
-    role: "Full Stack Developer",
-    duration: "1 Year 2 Months",
-    period: "Full-Time",
-    badge: "Full Stack",
-    type: "Professional",
-    description: "Built and enhanced full stack production web applications across the MERN stack with complete frontend and backend lifecycle ownership.",
-    points: [
-      "Developed and enhanced web applications using React.js, Node.js, Express.js, and MongoDB.",
-      "Built responsive interfaces, integrated REST APIs, and implemented application features.",
-      "Handled authentication, database operations, debugging, and performance improvements."
-    ],
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "Authentication"]
+    tech: ["HTML5", "CSS3", "JavaScript ES6+", "Bootstrap", "Tailwind CSS", "WordPress", "Responsive UI", "Git"]
   },
   {
     company: "Unified Mentor Private Limited",
     role: "Full Stack Developer Intern",
     duration: "December 2024 – May 2025 | 6 Months",
     period: "Internship",
-    badge: "Internship",
+    badge: "4 Internship Projects",
     type: "Internship",
-    description: "Engineered responsive frontend screens, connected RESTful services, and structured persistent schemas for database CRUD features.",
+    description: "Delivered 4 end-to-end full stack web applications (To-Do List, Expense Tracker, Student Management System, Online Food Ordering) using React.js, Node.js, Express.js, and MongoDB.",
     points: [
-      "Developed responsive React.js interfaces and REST APIs using Node.js and Express.js.",
-      "Created MongoDB schemas, implemented CRUD operations, and supported testing and debugging."
+      "Engineered responsive React.js interfaces and integrated RESTful endpoints with Node.js and Express.",
+      "Designed MongoDB schemas, performed CRUD operations with data validation, and conducted thorough testing."
     ],
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "CRUD Operations", "API Testing"]
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "CRUD Operations", "REST APIs", "Git"]
   }
 ];
 
@@ -51,7 +53,7 @@ export const education = {
   university: "Bharathiar University",
   highlights: [
     "Comprehensive foundation in algorithms, data structures, and computer science principles.",
-    "Web development and software lifecycle methodologies.",
-    "Database management systems, relational modeling, and object-oriented paradigms."
+    "Web development methodologies and full stack software lifecycle design.",
+    "Database management systems, relational architectures, and object-oriented programming."
   ]
 };

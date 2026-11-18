@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 import AnimatedBackground from './components/AnimatedBackground';
+import FloatingContactIcons from './components/FloatingContactIcons';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Skills from './sections/Skills';
@@ -29,6 +30,9 @@ export default function App() {
 
       {/* Atmospheric Animated Background & Lighting */}
       <AnimatedBackground />
+
+      {/* Fixed Floating Contact Icons (Left: Email | Right: Call, WhatsApp, Back to Top) */}
+      <FloatingContactIcons />
 
       {/* Futuristic Floating Navbar */}
       <Navbar activeSection={activeSection} />

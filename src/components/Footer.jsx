@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowUp, Github, Linkedin, Mail, Phone, Heart, Sparkles } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
+import { FaLinkedin, FaEnvelope, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 import { personalInfo } from '../data/personalInfo';
 
 export default function Footer() {
@@ -18,6 +19,17 @@ export default function Footer() {
     { label: 'Education', href: '#education' },
     { label: 'Contact', href: '#contact' },
   ];
+
+  const emailSubject = encodeURIComponent("Let's Discuss a Project – Azhagumalai Krishnan");
+  const emailBody = encodeURIComponent(
+    "Hello Azhagumalai,\n\nI visited your portfolio and would like to connect with you regarding a potential project or opportunity.\n\nI would love to discuss further details.\n\nBest regards,"
+  );
+  const mailtoUrl = `mailto:${personalInfo.email}?subject=${emailSubject}&body=${emailBody}`;
+
+  const whatsappMessage = encodeURIComponent(
+    "Hello Azhagumalai! I visited your portfolio and would like to connect with you regarding a project or professional opportunity."
+  );
+  const whatsappUrl = `https://wa.me/919361939076?text=${whatsappMessage}`;
 
   return (
     <footer className="relative bg-[#070A12] border-t border-white/10 pt-16 pb-12 overflow-hidden">
@@ -59,21 +71,30 @@ export default function Footer() {
                 className="w-9 h-9 rounded-xl bg-white/5 border border-white/10 hover:border-[#00D4FF] hover:bg-[#00D4FF]/10 text-[#A1A1AA] hover:text-[#00D4FF] flex items-center justify-center transition-all duration-300"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-4 h-4" />
+                <FaLinkedin className="w-4 h-4" />
               </a>
               <a
-                href={`mailto:${personalInfo.email}`}
+                href={mailtoUrl}
                 className="w-9 h-9 rounded-xl bg-white/5 border border-white/10 hover:border-[#756BFF] hover:bg-[#756BFF]/10 text-[#A1A1AA] hover:text-[#756BFF] flex items-center justify-center transition-all duration-300"
                 aria-label="Email"
               >
-                <Mail className="w-4 h-4" />
+                <FaEnvelope className="w-4 h-4" />
               </a>
               <a
                 href={`tel:${personalInfo.phone}`}
                 className="w-9 h-9 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-400 hover:bg-emerald-400/10 text-[#A1A1AA] hover:text-emerald-400 flex items-center justify-center transition-all duration-300"
                 aria-label="Phone"
               >
-                <Phone className="w-4 h-4" />
+                <FaPhoneAlt className="w-3.5 h-3.5" />
+              </a>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-xl bg-white/5 border border-white/10 hover:border-[#25D366] hover:bg-[#25D366]/10 text-[#A1A1AA] hover:text-[#25D366] flex items-center justify-center transition-all duration-300"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -105,7 +126,7 @@ export default function Footer() {
             <div className="space-y-2 text-xs text-[#A1A1AA]">
               <div>
                 <span className="block text-[10px] uppercase text-[#64748B]">Email</span>
-                <a href={`mailto:${personalInfo.email}`} className="text-[#F8FAFC] hover:text-[#00D4FF] transition-colors font-mono">
+                <a href={mailtoUrl} className="text-[#F8FAFC] hover:text-[#00D4FF] transition-colors font-mono">
                   {personalInfo.email}
                 </a>
               </div>
@@ -117,7 +138,7 @@ export default function Footer() {
               </div>
               <div className="pt-2">
                 <span className="inline-flex items-center gap-1.5 text-[10px] font-mono px-2 py-1 rounded bg-[#10B981]/10 text-emerald-400 border border-[#10B981]/20">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
                   Status: Available
                 </span>
               </div>
